@@ -13,7 +13,7 @@ import arc1 from "./../assets/Arc2.png";
 import arc2 from "./../assets/Arc 5.png";
 import CardPlan from "../components/CardPlan";
 
-import basic from "./../assets/Basic.png";
+import basic from "./../assets/basic.png";
 
 const HomePage = () => {
     return (
