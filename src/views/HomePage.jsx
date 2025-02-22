@@ -15,6 +15,25 @@ import CardPlan from "../components/CardPlan";
 
 import basic from "./../assets/basic.png";
 
+import gopay from "./../assets/Gopay.png";
+import akulaku from "./../assets/Akulaku.png";
+import alfamart from "./../assets/Alfamart.png";
+import american from "./../assets/american-express.png";
+import bca from "./../assets/BCA.png";
+import bri from "./../assets/BRI.png";
+import indomaret from "./../assets/Indomaret.png";
+import kredivo from "./../assets/kredivo.png";
+import mandiri from "./../assets/Mandiri.png";
+import mastercard from "./../assets/mastercard.png";
+import visa from "./../assets/path3789.png";
+import qris from "./../assets/QRIS.svg";
+import shophee from "./../assets/Shopee Pay.png";
+import jcb from "./../assets/Vector.png";
+
+import woman from "./../assets/woman.png";
+import patter2r from "./../assets/pattern2-r.png";
+import patter2l from "./../assets/pattern2-l.png";
+
 const HomePage = () => {
     return (
         <>
@@ -358,88 +377,72 @@ const HomePage = () => {
                 </div>
             </section>
 
-            <div className="mb-24">
+            <section className="mb-24">
                 <h2 className="text-center text-4xl md:text-5xl font-bold mb-16">
-                    <span className="text-[#00BFFF]">Seamless</span>{" "}
-                    <span className="text-[#1a237e]">Integrations</span>
+                    <span className="text-transparent bg-clip-text bg-gradient">
+                        Seamless
+                    </span>{" "}
+                    <span className="text-dark">Integrations</span>
                 </h2>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center justify-items-center mb-8">
+                    <img src={gopay} alt="GoPay" className="h-8 w-auto" />
+                    <img src={shophee} alt="ShopeePay" className="h-8 w-auto" />
+                    <img src={qris} alt="qRIS" className="h-8 w-auto" />
+                    <img src={visa} alt="Visa" className="h-8 w-auto" />
                     <img
-                        src="/placeholder.svg"
-                        alt="GoPay"
-                        className="h-8 w-auto"
-                    />
-                    <img
-                        src="/placeholder.svg"
-                        alt="ShopeePay"
-                        className="h-8 w-auto"
-                    />
-                    <img
-                        src="/placeholder.svg"
-                        alt="GRIS"
-                        className="h-8 w-auto"
-                    />
-                    <img
-                        src="/placeholder.svg"
-                        alt="Visa"
-                        className="h-8 w-auto"
-                    />
-                    <img
-                        src="/placeholder.svg"
+                        src={mastercard}
                         alt="Mastercard"
                         className="h-8 w-auto"
                     />
+                    <img src={jcb} alt="JCB" className="h-8 w-auto" />
                     <img
-                        src="/placeholder.svg"
-                        alt="JCB"
-                        className="h-8 w-auto"
-                    />
-                    <img
-                        src="/placeholder.svg"
+                        src={american}
                         alt="American Express"
                         className="h-8 w-auto"
                     />
                 </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center justify-items-center">
+                    <img src={bca} alt="BCA KlikPay" className="h-8 w-auto" />
+                    <img src={bri} alt="BRI" className="h-8 w-auto" />
+                    <img src={mandiri} alt="Mandiri" className="h-8 w-auto" />
+                    <img src={alfamart} alt="Alfamart" className="h-8 w-auto" />
                     <img
-                        src="/placeholder.svg"
-                        alt="BCA KlikPay"
-                        className="h-8 w-auto"
-                    />
-                    <img
-                        src="/placeholder.svg"
-                        alt="BRI"
-                        className="h-8 w-auto"
-                    />
-                    <img
-                        src="/placeholder.svg"
-                        alt="Mandiri"
-                        className="h-8 w-auto"
-                    />
-                    <img
-                        src="/placeholder.svg"
-                        alt="Alfamart"
-                        className="h-8 w-auto"
-                    />
-                    <img
-                        src="/placeholder.svg"
+                        src={indomaret}
                         alt="Indomaret"
                         className="h-8 w-auto"
                     />
                     <img
-                        src="/placeholder.svg"
+                        src={akulaku}
                         alt="Akulaku PayLater"
                         className="h-8 w-auto"
                     />
-                    <img
-                        src="/placeholder.svg"
-                        alt="Kredivo"
-                        className="h-8 w-auto"
-                    />
+                    <img src={kredivo} alt="Kredivo" className="h-8 w-auto" />
                 </div>
-            </div>
+            </section>
+
+            <section className="flex justify-center items-center bg-gradient text-white px-16">
+                <img className="absolute right-0 w-1/3" src={patter2r} alt="" />
+                <img className="absolute left-0 w-1/3" src={patter2l} alt="" />
+                <div className="z-10 hidden lg:block">
+                    <img className="object-cover" src={woman} alt="" />
+                </div>
+                <div className="container mx-auto px-4 py-8 text-center">
+                    <h2 className="text-3xl font-bold mb-6">
+                        Have a Question?
+                    </h2>
+                    <p className="mb-8 max-w-2xl mx-auto">
+                        We're ready to help your business grow with an easy and
+                        efficient reservation system. Our support team is
+                        available 24/7 with English and Bahasa Indonesia
+                        support.
+                    </p>
+                    <button className="bg-white text-blue-500 px-8 py-4 font-semibold rounded-lg shadow-xl">
+                        Contact Us Now
+                    </button>
+                </div>
+            </section>
         </>
     );
 };
